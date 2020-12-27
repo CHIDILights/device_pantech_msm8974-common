@@ -21,7 +21,9 @@
      for different hardware and product builds. -->
 <resources>
     <!-- Button Backlight -->
-    <bool name="config_button_brightness_support">true</bool> 
+    <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">128</integer>
 
+    <!-- Specify custom blanking delay of the display -->
+    <integer name="config_screen_off_delay">0</integer>
 </resources>
