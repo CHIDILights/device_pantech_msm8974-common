@@ -20,10 +20,20 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
+
     <!-- Button Backlight -->
     <bool name="config_button_brightness_support">true</bool>
     <integer name="config_button_brightness_default">128</integer>
 
     <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>
+
+    <!--Systeminfo for quick settings header -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/class/kgsl/kgsl-3d0/gpuclk</string>
+    <string name="config_sysGPULoad">/sys/class/kgsl/kgsl-3d0/gpubusy</string>
+    <integer name="config_sysCPUTempMultiplier">1</integer>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
+
 </resources>
